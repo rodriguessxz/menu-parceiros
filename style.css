@@ -1,0 +1,142 @@
+/* Reset básico */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+  line-height: 1.6;
+  background-color: #f9f9f9;
+  color: #333;
+}
+
+a {
+  color: #0077cc;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* Header */
+.header {
+  background-color: #ffffff;
+  padding: 2rem 1rem;
+  text-align: center;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.logo-container {
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+.logo-apresentacao {
+  width: 100%;
+  height: auto;
+  display: block;
+  filter: contrast(1.3) brightness(1.15);
+  border-radius: 12px;
+}
+
+/* Seções */
+main {
+  padding: 2rem;
+}
+
+.intro,
+.como-aproveitar,
+.associe {
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+.intro h1 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  color: #00703c;
+}
+
+.intro p,
+.como-aproveitar p,
+.associe p {
+  margin-bottom: 1rem;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.como-aproveitar h2,
+.associe h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  color: #333;
+}
+
+/* Cards dos parceiros */
+.parceiros {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+  margin-bottom: 3rem;
+}
+
+.card {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+  transition: transform 0.2s ease;
+  max-width: 320px;
+  flex: 1 1 300px;
+}
+
+.card:hover {
+  transform: scale(1.02);
+}
+
+.card img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+}
+
+.card-content {
+  padding: 1rem;
+}
+
+.card-content h3 {
+  margin-bottom: 0.5rem;
+  font-size: 1.25rem;
+  color: #00703c;
+}
+
+/* Botões */
+.botao-parceiros,
+.botao-associe {
+  display: inline-block;
+  padding: 0.75rem 1.5rem;
+  background-color: #00703c;
+  color: #fff;
+  font-weight: bold;
+  text-align: center;
+  border-radius: 8px;
+  transition: background-color 0.3s;
+}
+
+.botao-parceiros:hover,
+.botao-associe:hover {
+  background-color: #005c30;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 2rem 1rem;
+  background-color: #f0f0f0;
+}
