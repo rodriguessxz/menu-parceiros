@@ -5,6 +5,46 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Menu de Parceiros - Abrasel MG</title>
   <link rel="stylesheet" href="style.css" />
+  <style>
+    /* Estilos para os botões WhatsApp dentro dos cards */
+    .botao-whatsapp-card {
+      display: inline-block;
+      margin-top: 4px;
+      padding: 6px 12px;
+      background-color: #25D366;
+      color: white;
+      border-radius: 4px;
+      text-decoration: none;
+      font-weight: bold;
+      font-size: 0.9rem;
+      transition: background-color 0.3s ease;
+    }
+    .botao-whatsapp-card:hover {
+      background-color: #128C7E;
+    }
+
+    /* Botão flutuante WhatsApp */
+    .botao-wpp-parcerias {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      background-color: #25D366;
+      color: white;
+      padding: 14px 20px;
+      border-radius: 50px;
+      text-decoration: none;
+      font-weight: bold;
+      box-shadow: 0 4px 6px rgba(0,0,0,0.3);
+      z-index: 1000;
+      font-size: 1rem;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+    .botao-wpp-parcerias:hover {
+      background-color: #128C7E;
+    }
+  </style>
 </head>
 <body>
   <header class="header">
@@ -29,90 +69,89 @@
     </section>
 
     <section class="parceiros">
-      <!-- Exemplo de card com botão WhatsApp -->
       <div class="card">
-        <img src="images/pena-silveira.jpg" alt="Pena e Silveira Advogados">
+        <img src="images/pena-silveira.jpg" alt="Pena e Silveira Advogados" />
         <div class="card-content">
           <h3>Pena & Silveira Advogados</h3>
           <p>Assessoria jurídica exclusiva para bares e restaurantes. Associado Abrasel tem desconto nos serviços.</p>
-          <p><strong>Email:</strong> contato@penasilveira.com.br<br>
-          <strong>WhatsApp:</strong> (31) 98245-6651<br>
-          <a href="https://wa.me/5531982456651" target="_blank" class="botao-whatsapp-card">Falar no WhatsApp</a><br>
-          <strong>Site:</strong> <a href="http://www.bareserestaurantes.adv.br" target="_blank">bareserestaurantes.adv.br</a></p>
+          <p><strong>Email:</strong> contato@penasilveira.com.br<br />
+          <strong>WhatsApp:</strong> (31) 98245-6651<br />
+          <a href="https://wa.me/5531982456651" target="_blank" class="botao-whatsapp-card" rel="noopener noreferrer">Falar no WhatsApp</a><br />
+          <strong>Site:</strong> <a href="http://www.bareserestaurantes.adv.br" target="_blank" rel="noopener noreferrer">bareserestaurantes.adv.br</a></p>
         </div>
       </div>
 
       <div class="card">
-        <img src="images/bis.jpg" alt="BIS Soluções">
+        <img src="images/bis.jpg" alt="BIS Soluções" />
         <div class="card-content">
           <h3>BIS Soluções</h3>
           <p>Soluções em seguros e benefícios para funcionários dos associados Abrasel.</p>
-          <p><strong>Email:</strong> luizhenrique@bissolucoes.com.br<br>
-          <strong>WhatsApp:</strong> (31) 98448-7057<br>
-          <a href="https://wa.me/5531984487057" target="_blank" class="botao-whatsapp-card">Falar no WhatsApp</a><br>
-          <strong>Site:</strong> <a href="https://bissolucoes.com.br" target="_blank">bissolucoes.com.br</a></p>
+          <p><strong>Email:</strong> luizhenrique@bissolucoes.com.br<br />
+          <strong>WhatsApp:</strong> (31) 98448-7057<br />
+          <a href="https://wa.me/5531984487057" target="_blank" class="botao-whatsapp-card" rel="noopener noreferrer">Falar no WhatsApp</a><br />
+          <strong>Site:</strong> <a href="https://bissolucoes.com.br" target="_blank" rel="noopener noreferrer">bissolucoes.com.br</a></p>
         </div>
       </div>
 
       <div class="card">
-        <img src="images/urbanas.jpg" alt="Urbanas Regularizações">
+        <img src="images/urbanas.jpg" alt="Urbanas Regularizações" />
         <div class="card-content">
           <h3>Urbanas Regularizações</h3>
           <p>Consultoria gratuita em licenciamento com 20% de desconto em serviços de regularização.</p>
-          <p><strong>Email:</strong> comercial@urbanasregularizacoes.com.br<br>
-          <strong>WhatsApp:</strong> (31) 99611-0444<br>
-          <a href="https://wa.me/5531996110444" target="_blank" class="botao-whatsapp-card">Falar no WhatsApp</a><br>
-          <strong>Site:</strong> <a href="http://www.urbanasregularizacoes.com.br" target="_blank">urbanasregularizacoes.com.br</a></p>
+          <p><strong>Email:</strong> comercial@urbanasregularizacoes.com.br<br />
+          <strong>WhatsApp:</strong> (31) 99611-0444<br />
+          <a href="https://wa.me/5531996110444" target="_blank" class="botao-whatsapp-card" rel="noopener noreferrer">Falar no WhatsApp</a><br />
+          <strong>Site:</strong> <a href="http://www.urbanasregularizacoes.com.br" target="_blank" rel="noopener noreferrer">urbanasregularizacoes.com.br</a></p>
         </div>
       </div>
 
       <div class="card">
-        <img src="images/forno-criativo.jpg" alt="Forno Criativo">
+        <img src="images/forno-criativo.jpg" alt="Forno Criativo" />
         <div class="card-content">
           <h3>Forno Criativo</h3>
           <p>Assessoria de marketing especializada no setor de alimentação.</p>
-          <p><strong>Instagram:</strong> <a href="https://www.instagram.com/agenciafornocriativo/" target="_blank">@agenciafornocriativo</a></p>
+          <p><strong>Instagram:</strong> <a href="https://www.instagram.com/agenciafornocriativo/" target="_blank" rel="noopener noreferrer">@agenciafornocriativo</a></p>
         </div>
       </div>
 
       <div class="card">
-        <img src="images/maxup.jpg" alt="MaxUp Consultoria">
+        <img src="images/maxup.jpg" alt="MaxUp Consultoria" />
         <div class="card-content">
           <h3>MaxUp Consultoria</h3>
           <p>Consultoria de gestão com 10% de desconto para associados Abrasel.</p>
-          <p><strong>Email:</strong> contato@maxupconsultoria.com.br<br>
-          <strong>WhatsApp:</strong> (31) 97330-1144<br>
-          <a href="https://wa.me/5531973301144" target="_blank" class="botao-whatsapp-card">Falar no WhatsApp</a><br>
-          <strong>Site:</strong> <a href="http://www.maxupconsultoria.com.br" target="_blank">maxupconsultoria.com.br</a></p>
+          <p><strong>Email:</strong> contato@maxupconsultoria.com.br<br />
+          <strong>WhatsApp:</strong> (31) 97330-1144<br />
+          <a href="https://wa.me/5531973301144" target="_blank" class="botao-whatsapp-card" rel="noopener noreferrer">Falar no WhatsApp</a><br />
+          <strong>Site:</strong> <a href="http://www.maxupconsultoria.com.br" target="_blank" rel="noopener noreferrer">maxupconsultoria.com.br</a></p>
         </div>
       </div>
 
       <div class="card">
-        <img src="images/maya.jpg" alt="Maya Energy">
+        <img src="images/maya.jpg" alt="Maya Energy" />
         <div class="card-content">
           <h3>Maya Energy</h3>
           <p>Referência em eficiência energética com foco em energia solar, hídrica e mercado livre.</p>
-          <p><strong>Contato:</strong> Eric Mota<br>
-          <strong>Email:</strong> eric.mota@mayaenergy.com<br>
-          <strong>Site:</strong> <a href="https://www.assinemaya.com.br" target="_blank">assinemaya.com.br</a></p>
+          <p><strong>Contato:</strong> Eric Mota<br />
+          <strong>Email:</strong> eric.mota@mayaenergy.com<br />
+          <strong>Site:</strong> <a href="https://www.assinemaya.com.br" target="_blank" rel="noopener noreferrer">assinemaya.com.br</a></p>
         </div>
       </div>
 
       <div class="card">
-        <img src="images/ricardo.jpg" alt="Ricardo Maria Tranças">
+        <img src="images/ricardo.jpg" alt="Ricardo Maria Tranças" />
         <div class="card-content">
           <h3>Ricardo Maria Tranças</h3>
           <p>Mentorias, workshops e treinamentos práticos com 10% de desconto para associados.</p>
-          <p><strong>Contato:</strong> William Matos<br>
-          <strong>Email:</strong> william@multimidiaconsultoria.com.br<br>
-          <strong>WhatsApp:</strong> (31) 99115-6941<br>
-          <a href="https://wa.me/5531991156941" target="_blank" class="botao-whatsapp-card">Falar no WhatsApp</a><br>
-          <strong>Site:</strong> <a href="https://www.ricardomariatrancas.com.br" target="_blank">ricardomariatrancas.com.br</a></p>
+          <p><strong>Contato:</strong> William Matos<br />
+          <strong>Email:</strong> william@multimidiaconsultoria.com.br<br />
+          <strong>WhatsApp:</strong> (31) 99115-6941<br />
+          <a href="https://wa.me/5531991156941" target="_blank" class="botao-whatsapp-card" rel="noopener noreferrer">Falar no WhatsApp</a><br />
+          <strong>Site:</strong> <a href="https://www.ricardomariatrancas.com.br" target="_blank" rel="noopener noreferrer">ricardomariatrancas.com.br</a></p>
         </div>
       </div>
 
       <div class="card">
-        <img src="images/cmsl.jpg" alt="CMSL">
+        <img src="images/cmsl.jpg" alt="CMSL" />
         <div class="card-content">
           <h3>CMSL - Consórcio Mineira da Sorte</h3>
           <p>Operadora oficial de jogos de raspadinha e Trem das 11 da Loteria Mineira. Benefícios e kits promocionais para associados.</p>
@@ -124,15 +163,15 @@
     <section class="associe">
       <h2>Associe-se à Abrasel MG</h2>
       <p>Faça parte da rede que fortalece o setor de alimentação fora do lar.</p>
-      <a href="https://siga.abrasel.com.br/queroserabrasel/" target="_blank" class="botao-associe">Associe-se agora</a>
+      <a href="https://quero-associar.abrasel.com.br/" target="_blank" class="botao-associe" rel="noopener noreferrer">Associe-se agora</a>
     </section>
 
     <footer>
-      <a href="https://mg.abrasel.com.br/parceiros/" target="_blank" class="botao-parceiros">Ver todos os parceiros no site da Abrasel MG</a>
+      <a href="https://mg.abrasel.com.br/parceiros/" target="_blank" class="botao-parceiros" rel="noopener noreferrer">Ver todos os parceiros no site da Abrasel MG</a>
     </footer>
 
     <!-- Botão flutuante para parcerias -->
-    <a href="https://wa.me/553172408551" target="_blank" class="botao-wpp-parcerias" title="Falar com responsável pelas parcerias da Abrasel MG">
+    <a href="https://wa.me/553172408551" target="_blank" class="botao-wpp-parcerias" title="Falar com responsável pelas parcerias da Abrasel MG" rel="noopener noreferrer">
       🤝 Falar com Parcerias Abrasel
     </a>
   </main>

@@ -94,9 +94,6 @@ main {
   transition: transform 0.2s ease;
   max-width: 320px;
   flex: 1 1 300px;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
 }
 
 .card:hover {
@@ -130,9 +127,6 @@ main {
   text-align: center;
   border-radius: 8px;
   transition: background-color 0.3s;
-  cursor: pointer;
-  border: none;
-  text-decoration: none;
 }
 
 .botao-parceiros:hover,
@@ -140,51 +134,9 @@ main {
   background-color: #005c30;
 }
 
-/* Botão WhatsApp dentro do card */
-.botao-whatsapp {
-  margin-top: 1rem;
-  background-color: #25D366;
-  color: white;
-  padding: 0.6rem 1.2rem;
-  border-radius: 8px;
-  font-weight: bold;
+/* Footer */
+footer {
   text-align: center;
-  display: inline-block;
-  transition: background-color 0.3s;
-  text-decoration: none;
-  cursor: pointer;
-  border: none;
-  font-size: 1rem;
-}
-
-.botao-whatsapp:hover {
-  background-color: #1ebe57;
-}
-
-/* Botão flutuante WhatsApp (canto inferior direito) */
-.botao-whatsapp-flutuante {
-  position: fixed;
-  bottom: 20px;
-  right: 20px;
-  background-color: #25D366;
-  width: 56px;
-  height: 56px;
-  border-radius: 50%;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.3);
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  cursor: pointer;
-  transition: background-color 0.3s;
-  z-index: 1000;
-}
-
-.botao-whatsapp-flutuante:hover {
-  background-color: #1ebe57;
-}
-
-.botao-whatsapp-flutuante svg {
-  width: 28px;
-  height: 28px;
-  fill: white;
+  padding: 2rem 1rem;
+  background-color: #f0f0f0;
 }
