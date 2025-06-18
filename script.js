@@ -38,14 +38,17 @@ document.addEventListener('DOMContentLoaded', function() {
       ]
     },
     {
-      segment: "Marketing e Comunicação",
-      name: "Forno Criativo",
-      image: "images/forno-criativo.jpg",
-      description: "Assessoria de marketing especializada no setor de alimentação.",
-      contacts: [
-        { icon: "fab fa-instagram", text: "@agenciafornocriativo", link: "https://www.instagram.com/agenciafornocriativo/" }
-      ]
-    },
+  segment: "Marketing e Comunicação",
+  name: "Forno Criativo",
+  image: "images/forno-criativo.jpg",
+  description: "Assessoria de marketing especializada no setor de alimentação.",
+  contacts: [
+    { icon: "fas fa-envelope", text: "william@multien.com.br" },
+    { icon: "fas fa-phone-alt", text: "(31) 99115-6941" },
+    { icon: "fas fa-globe", text: "fornocriativo.com.br", link: "https://www.fornocriativo.com.br/" },
+    { icon: "fab fa-whatsapp", text: "Falar no WhatsApp", link: "https://wa.me/5531991156941", isButton: true },
+  ]
+},
     {
       segment: "Consultoria e Gestão",
       name: "MaxUp Consultoria",
@@ -58,24 +61,24 @@ document.addEventListener('DOMContentLoaded', function() {
         { icon: "fab fa-whatsapp", text: "Falar no WhatsApp", link: "https://wa.me/5531973301144", isButton: true }
       ]
     },
-    {
-      segment: "Energia e Sustentabilidade",
-      name: "Maya Energy",
-      image: "images/maya.jpg",
-      description: "Referência em eficiência energética com foco em energia solar, hídrica e mercado livre.",
-      contacts: [
-        { icon: "fas fa-user", text: "Eric Mota" },
-        { icon: "fas fa-envelope", text: "eric.mota@mayaenergy.com" },
-        { icon: "fas fa-globe", text: "assinemaya.com.br", link: "https://www.assinemaya.com.br" }
-      ]
-    },
+   {
+  segment: "Energia e Sustentabilidade",
+  name: "Maya Energy",
+  image: "images/maya.jpg",
+  description: "Referência em eficiência energética com foco em energia solar, hídrica e mercado livre.",
+  contacts: [
+    { icon: "fas fa-envelope", text: "eric.mota@mayaenergy.com" },
+    { icon: "fas fa-phone-alt", text: "(31) 99789-7800" },  // TELEFONE ADICIONADO AQUI
+    { icon: "fas fa-globe", text: "assinemaya.com.br", link: "https://www.assinemaya.com.br" },
+    { icon: "fab fa-whatsapp", text: "Falar no WhatsApp", link: "https://wa.me/5531997897800", isButton: true }  // LINK DO WHATSAPP GERADO AUTOMATICAMENTE
+  ]
+},
     {
       segment: "Treinamentos e Mentorias",
       name: "Ricardo Maria Tranças",
       image: "images/ricardo.jpg",
       description: "Mentorias, workshops e treinamentos práticos com 10% de desconto para associados.",
       contacts: [
-        { icon: "fas fa-user", text: "William Matos" },
         { icon: "fas fa-envelope", text: "william@multimidiaconsultoria.com.br" },
         { icon: "fas fa-phone-alt", text: "(31) 99115-6941" },
         { icon: "fas fa-globe", text: "ricardomariatrancas.com.br", link: "https://www.ricardomariatrancas.com.br" },
@@ -83,14 +86,17 @@ document.addEventListener('DOMContentLoaded', function() {
       ]
     },
     {
-      segment: "Loteria",
-      name: "CMSL - Consórcio Mineira da Sorte",
-      image: "images/cmsl.jpg",
-      description: "Operadora oficial de jogos de raspadinha e Trem das 11 da Loteria Mineira. Benefícios e kits promocionais para associados.",
-      contacts: [
-        { icon: "fas fa-gift", text: "9% de comissão, kits promocionais mensais e material POS" }
-      ]
-    }
+  segment: "Loteria",
+  name: "CMSL - Consórcio Mineira da Sorte",
+  image: "images/cmsl.jpg",
+  description: "Operadora oficial dos jogos Raspadinha Mineira e Trem das 11. Associados Abrasel recebem: 9% de comissão (maior que o mercado), kits promocionais mensais exclusivos e material de ponto de venda gratuito.",
+  contacts: [
+    { icon: "fas fa-phone-alt", text: "(31) 99898-4271" },
+    { icon: "fas fa-envelope", text: "faleconosco@msloteria.com.br" },
+    { icon: "fas fa-globe", text: "raspadinha.com.br", link: "https://raspadinha.com.br/" },
+    { icon: "fab fa-whatsapp", text: "Falar no WhatsApp", link: "https://wa.me/5531998984271", isButton: true },
+  ]
+}
   ];
 
   // Elementos do DOM
