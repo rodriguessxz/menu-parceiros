@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Painel de Administração - Parceiros Abrasel</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+      margin: 0;
+      padding: 20px;
+      background-color: #f5f5f5;
+    }
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+      background: white;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+    h1, h2 {
+      color: #333;
+    }
+    form {
+      margin-bottom: 30px;
+      padding: 20px;
+      background: #f9f9f9;
+      border-radius: 5px;
+    }
+    .form-group {
+      margin-bottom: 15px;
+    }
+    label {
+      display: block;
+      margin-bottom: 5px;
+      font-weight: bold;
+    }
+    input[type="text"],
+    input[type="url"],
+    textarea,
+    select {
+      width: 100%;
+      padding: 8px;
+      border: 1px solid #ddd;
+      border-radius: 4px;
+    }
+    textarea {
+      min-height: 100px;
+    }
+    button, .btn {
+      background: #0066cc;
+      color: white;
+      border: none;
+      padding: 10px 15px;
+      border-radius: 4px;
+      cursor: pointer;
+      margin-right: 10px;
+    }
+    button:hover, .btn:hover {
+      background: #0055aa;
+    }
+    .remove-contact {
+      background: #cc0000;
+    }
+    .remove-contact:hover {
+      background: #aa0000;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 20px;
+    }
+    th, td {
+      padding: 12px;
+      text-align: left;
+      border-bottom: 1px solid #ddd;
+    }
+    th {
+      background-color: #f2f2f2;
+    }
+    tr:hover {
+      background-color: #f5f5f5;
+    }
+    img {
+      max-width: 100px;
+      height: auto;
+    }
+    .contact-field {
+      display: flex;
+      gap: 10px;
+      margin-bottom: 10px;
+      align-items: center;
+    }
+    .contact-field select {
+      flex: 1;
+    }
+    .contact-field input {
+      flex: 2;
+    }
+    .filter-container {
+      margin-bottom: 20px;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Painel de Administração</h1>
+    <p>Gerencie os parceiros da Abrasel aqui</p>
+    
+    <h2 id="form-title">Adicionar Novo Parceiro</h2>
+    <form id="partners-form">
+      <div class="form-group">
+        <label for="segment">Segmento:</label>
+        <input type="text" id="segment" name="segment" required>
+      </div>
+      
+      <div class="form-group">
+        <label for="name">Nome do Parceiro:</label>
+        <input type="text" id="name" name="name" required>
+      </div>
+      
+      <div class="form-group">
+        <label for="image">URL da Imagem:</label>
+        <input type="url" id="image" name="image" required>
+      </div>
+      
+      <div class="form-group">
+        <label for="description">Descrição:</label>
+        <textarea id="description" name="description" required></textarea>
+      </div>
+      
+      <div class="form-group">
+        <label>Contatos:</label>
+        <div id="contacts-container"></div>
+        <button type="button" id="add-contact" class="btn">Adicionar Contato</button>
+      </div>
+      
+      <button type="submit" class="btn">Salvar Parceiro</button>
+    </form>
+    
+    <h2>Parceiros Cadastrados</h2>
+    <div class="filter-container">
+      <label for="segment-filter">Filtrar por Segmento:</label>
+      <select id="segment-filter">
+        <option value="todos">Todos os Segmentos</option>
+        <option value="Jurídico">Jurídico</option>
+        <option value="Seguros e Benefícios">Seguros e Benefícios</option>
+        <option value="Licenciamento e Regulação">Licenciamento e Regulação</option>
+        <option value="Marketing e Comunicação">Marketing e Comunicação</option>
+        <option value="Consultoria e Gestão">Consultoria e Gestão</option>
+        <option value="Energia e Sustentabilidade">Energia e Sustentabilidade</option>
+        <option value="Treinamentos e Mentorias">Treinamentos e Mentorias</option>
+        <option value="Loteria">Loteria</option>
+      </select>
+    </div>
+    
+    <table>
+      <thead>
+        <tr>
+          <th>Segmento</th>
+          <th>Nome</th>
+          <th>Imagem</th>
+          <th>Descrição</th>
+          <th>Contatos</th>
+          <th>Ações</th>
+        </tr>
+      </thead>
+      <tbody id="partners-list">
+        <!-- Os parceiros serão carregados aqui via JavaScript -->
+      </tbody>
+    </table>
+  </div>
+
+  <script src="admin.js"></script>
+</body>
+</html>

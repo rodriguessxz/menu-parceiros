@@ -172,6 +172,43 @@ a {
   margin-right: auto;
 }
 
+/* Seção de Introdução */
+.intro-section {
+  padding: 4rem 0;
+  text-align: center;
+  background-color: var(--white);
+}
+
+.intro-section h1 {
+  color: var(--primary-color);
+  margin-bottom: 1.5rem;
+  font-size: 2.2rem;
+  position: relative;
+}
+
+.intro-section h1::after {
+  content: '';
+  display: block;
+  width: 100px;
+  height: 4px;
+  background-color: var(--secondary-color);
+  margin: 15px auto 0 auto;
+  border-radius: 2px;
+}
+
+.intro-section p {
+  margin-bottom: 1.5rem;
+  line-height: 1.8;
+  font-size: 1.1rem;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.intro-section p strong {
+  color: var(--primary-color);
+}
+
 /* Botões */
 .btn-primary {
   display: inline-block;
@@ -194,7 +231,7 @@ a {
 /* Benefits Section */
 .benefits {
   padding: 80px 0;
-  background-color: var(--white);
+  background-color: var(--light-color);
 }
 
 .benefits h2 {
@@ -219,10 +256,11 @@ a {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   gap: 30px;
+  margin-bottom: 40px;
 }
 
 .benefit-card {
-  background-color: var(--light-color);
+  background-color: var(--white);
   padding: 30px;
   border-radius: 10px;
   text-align: center;
@@ -254,10 +292,27 @@ a {
   color: var(--dark-color);
 }
 
+/* Como aproveitar texto adicional */
+.como-aproveitar-text {
+  background-color: var(--white);
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: var(--box-shadow);
+  max-width: 800px;
+  margin: 0 auto;
+  border-left: 4px solid var(--secondary-color);
+}
+
+.como-aproveitar-text p {
+  margin-bottom: 1.5rem;
+  line-height: 1.8;
+  font-size: 1.1rem;
+}
+
 /* Partners Section */
 .partners-section {
   padding: 80px 0;
-  background-color: var(--light-color);
+  background-color: var(--white);
 }
 
 .partners-section h2 {
@@ -627,6 +682,16 @@ a {
   .benefits-grid {
     grid-template-columns: 1fr;
   }
+  
+  .intro-section h1 {
+    font-size: 1.8rem;
+  }
+  
+  .intro-section p,
+  .como-aproveitar-text p {
+    font-size: 1rem;
+    padding: 0 15px;
+  }
 }
 
 @media (max-width: 480px) {
@@ -645,5 +710,13 @@ a {
   
   .partners-container {
     grid-template-columns: 1fr;
+  }
+  
+  .intro-section {
+    padding: 2rem 0;
+  }
+  
+  .como-aproveitar-text {
+    padding: 1.5rem;
   }
 }
