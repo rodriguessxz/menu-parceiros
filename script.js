@@ -14,6 +14,18 @@ document.addEventListener('DOMContentLoaded', function() {
         { icon: "fab fa-whatsapp", text: "Falar no WhatsApp", link: "https://wa.me/5531982456651", isButton: true }
       ]
     },
+   {
+  segment: "Jurídico",
+  name: "Campos & Gregorio Sociedade de Advogados",
+  image: "images/ceg.jpg", // (adicione o caminho real da imagem)
+  description: "Desconto de 30% no valor praticado pela Campos & Gregorio para registro de marca junto ao INPI. O valor com desconto para associados Abrasel é R$1.062,60 (inclui: reunião prévia, análise de viabilidade, protocolo e acompanhamento até trânsito final).",
+  contacts: [
+    { icon: "fas fa-envelope", text: "andre@camposegregorio.com.br" },
+    { icon: "fas fa-phone-alt", text: "(31) 98806-6055" }, // Adicionei o telefone formatado como nos outros
+    { icon: "fas fa-globe", text: "camposegregorio.com.br", link: "http://www.camposegregorio.com.br" }, // Link com HTTP
+    { icon: "fab fa-whatsapp", text: "Falar no WhatsApp", link: "https://wa.me/5531988066055", isButton: true } // Botão WhatsApp padrão
+  ]
+},
 
     // 2. Assessoria (segmento novo)
     {
